@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+ 
+:root{
+    --ana-renk: #6d0000;
+    --siyah-renk: #121212;
+    --border: 1px solid rgba(255,255,255,0.3);
+} 
+
+*{
+    font-family: 'Teko', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s ease;
+}
+ 
+html{
+    overflow-x: hidden;
+    scroll-padding-top: 90px;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--ana-renk);
+}
+
+section{
+    padding: 35px 7%;
+}
+
+.baslik{
+    color: white;
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-bottom: 35px;
+    border-bottom: 2px solid white;
+}
+
+.baslik span{
+    color: black;
+    text-transform: uppercase;
+}
+
+.buton{
+    margin-top: 10px;
+    display: inline-block;
+    padding: 20px 37.5px;
+    border-radius: 300px;
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+
+}
+
+.buton:hover{
+    opacity: 0.8;
+}
+/* HEADER BAŞLANGICI */
+.header{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+    margin: 20px 7%;
+    border-radius: 30px;
+    box-shadow: 0px 0px 17px -2px rgba(0,0,0.75);
+    position: sticky ;
+    top: 0;
+    z-index: 1000;
+}
+.header .navbar a{
+    margin: 0 10px;
+    font-size: 16px;
+    color: var(--siyah-renk);
+    border-bottom: 1.5px solid transparent;
+}
+
+.header .navbar a:hover{
+    border-color: var(--ana-renk);
+    padding-bottom: 5px;
+}
+
+.header .aboutandcontact a{
+    margin: 0 10px;
+    font-size: 16px;
+    color: var(--siyah-renk);
+    border-bottom: 1.5px solid transparent;
+}
+.header .aboutandcontact a:hover{
+    border-color: var(--ana-renk);
+    padding-bottom: 5px;
+}
+
+ .logo img{
+        width: 71px;
+ }
+/* HEADER BİTİŞİ */
+
+/* HOME BAŞLANGICI */
+.home{
+    min-height: 100vh;
+    background: url(../resimler/alexey-malakhov-LZVkAbIw74Q-unsplash.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: -110px;
+    display: flex;
+    align-items: center;
+}
+
+.home .content{
+    max-width: 600px;
+}
+.home .content h3{
+    font-size: 60px;
+    color: white;
+}
+.home .content p{
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.8;
+    padding: 10px 0;
+    color: white;
+}
+/* HOME BİTİŞ */
+
+/* BEST BİKES BAŞLANGICI */
+
+
+
+.bestbikes .kutu-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+}
+
+.bestbikes .kutu-container .kutu{
+    padding: 30px;
+    background-color: white;
+    border-radius: 30px;
+    background-color: white;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.bestbikes .kutu-container .kutu img{
+    width: 100%;
+    object-fit: cover;
+}
+.bestbikes .kutu-container .kutu .motor-kategori{
+    font-size: 20px;
+}
+.bestbikes .kutu-container .kutu h3{
+    font-size: 30px;
+    padding: 10px 0;
+}
+
+.bestbikes .kutu-container .kutu .fiyat{
+    font-size: 25px;
+    padding: 10px 0;
+}
+/* BEST BİKES BİTİŞ */
+
+
+/* BEST GEAR BAŞLANGICI */
+.bestgear .kutu-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+}
+
+.bestgear .kutu-container .kutu {
+    padding: 30px;
+    background-color: white;
+    border-radius: 30px;
+    background-color: white;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.bestgear .kutu-container .kutu img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.bestgear .kutu-container .kutu .ekipman-kategori{
+    font-size: 20px;
+}
+
+.bestgear .kutu-container .kutu h3{
+    font-size: 30px;
+    padding: 10px 0;
+}
+
+.bestgear .kutu-container .kutu .fiyat{
+    font-size: 25px;
+    padding: 10px 0;
+}
+/* BEST GEAR BİTİŞ */
+
